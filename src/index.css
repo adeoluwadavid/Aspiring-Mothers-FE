@@ -7,7 +7,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.footerr{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#logo{
+  width : 100px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+  width : 100px;
+  height: 50px;
+}
+#img{
+  width: 640px;
+  height: 360px
+}
+#button-margin{
+  margin-bottom: 20px;
+}
+#consult{
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
