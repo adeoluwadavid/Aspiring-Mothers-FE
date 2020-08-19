@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Footer from './footer'
-import Header from './dashboarheader'
+import Header from './dashboardheader'
 
 class Dashboard extends Component {
     render() {
@@ -19,8 +19,8 @@ class Dashboard extends Component {
                             </p>
                         </article>
                         <article className="col l6">
-                            <h5>First Trimeester Stage</h5>
-                            <p>
+                            <h5>First Trimester Stage</h5>
+                            <div>
                                 Hormonal changes will affect almost every organ in the body. Some signs of early pregnancy in many women include symptoms like:
                                 <ol>
                                     <li>Extreme fatigue</li>
@@ -34,7 +34,7 @@ class Dashboard extends Component {
                                     <li>Heartburn</li>
                                     <li>Weight gain or loss</li>
                                 </ol>
-                            </p>
+                            </div>
                         </article>
                     </div>
                     <div className="row">
@@ -42,7 +42,7 @@ class Dashboard extends Component {
                             <h5>
                                 Second Trimester: Physical and Emotional Changes in a Woman
                         </h5>
-                            <p>
+                            <div>
                                 Some changes you may notice in your body in the second trimester include:
                         <ol>
                                     <li>Back, abdomen, groin, or thigh aches and pains</li>
@@ -61,11 +61,11 @@ class Dashboard extends Component {
                             </li>
                                    
                                 </ol>
-                            </p>
+                            </div>
                         </article>
                         <article className="col l6">
                             <h5>Third Trimester: Emotional and Physical Changes a Woman May Experience</h5>
-                            <p>
+                            <div>
                                 In the third and final trimester you will notice more physical changes, including:
                         <ul>
                                     <li>Swelling of the ankles, fingers, and face.
@@ -79,7 +79,7 @@ class Dashboard extends Component {
                                     <li>Contractions, which can be a sign of real or false labor</li>
                                     <li>Other symptoms you may notice in the third trimester include shortness of breath, heartburn, and difficulty sleeping</li>
                                 </ul>
-                            </p>
+                            </div>
                         </article>
                     </div>
 

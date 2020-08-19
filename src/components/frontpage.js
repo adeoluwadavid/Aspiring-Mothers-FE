@@ -52,7 +52,7 @@ class FrontPage extends Component {
                     </article>
                 </div>
                 <div id="button-margin">
-                    <Link to="/register">
+                    <Link to="/login">
                         <button className="btn button waves-effect waves-light" type="submit" name="action">
                             Find Out More
                     <i className="material-icons right">send</i>
