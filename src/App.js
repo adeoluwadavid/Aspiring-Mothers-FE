@@ -19,7 +19,6 @@ class App extends Component {
             <Route path="/register" component={Register} />
             <Route path="/login" component={Login} />
             <Route path="/recoverpasswordone" component={RecoverPasswordOne} />
-            <Route path="/recoverpasswordtwo" component={RecoverPasswordTwo} />
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/consult" component={Consultation} />
             <Route path ="/profile" component={Profile} />
