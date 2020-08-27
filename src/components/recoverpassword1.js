@@ -46,7 +46,7 @@ class RecoverPasswordOne extends Component {
                 <form  className="col s12" onSubmit={this.handleSubmit}>
                 <div className="row">
                     <div className="input-field center">
-                        <input id="first_name2" type="email" className="validate" value={this.state.email} onChange={this.handleChange} />
+                        <input id="first_name2" type="email" className="validate" value={this.state.email} onChange={this.handleChange} required/>
                         <label className="active" htmlFor="recoverPassword">Your Email</label>
                     </div>
                     <div className="center red-text">{this.state.message}</div>
