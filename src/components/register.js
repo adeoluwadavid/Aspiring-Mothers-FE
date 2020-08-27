@@ -55,7 +55,7 @@ class Register extends Component {
             address: this.state.address
         }
 
-        fetch('http://localhost:8088/authe/signup', {
+        fetch('https://my-java-backend.herokuapp.com/authe/signup', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',

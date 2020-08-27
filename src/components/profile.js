@@ -23,7 +23,7 @@ class Profile extends Component {
         var data = new FormData();
         data.append('file', this.state.selectedFile);
 
-        fetch("http://localhost:8088/authe/upload/" + parseInt(this.state.myToken.id), {
+        fetch("https://my-java-backend.herokuapp.com/authe/upload/" + parseInt(this.state.myToken.id), {
             method: 'PUT',
             body: data
         })
@@ -55,7 +55,7 @@ class Profile extends Component {
             newPassword: this.state.newPassword
         }
 
-        fetch('http://localhost:8088/authe/updatePassword/' + parseInt(this.state.myToken.id),{
+        fetch('https://my-java-backend.herokuapp.com/authe/updatePassword/' + parseInt(this.state.myToken.id),{
             method:'PUT',
             headers:{
                 'Accept': 'application/json, text/plain, */*',
@@ -73,7 +73,7 @@ class Profile extends Component {
         })
     }
     componentDidMount() {
-        fetch('http://localhost:8088/authe/download/' + parseInt(this.state.myToken.id))
+        fetch('https://my-java-backend.herokuapp.com/authe/download/' + parseInt(this.state.myToken.id))
             .then(res => res.json())
             .then(data => {
                 if (data) {

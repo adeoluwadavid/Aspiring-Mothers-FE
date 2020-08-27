@@ -31,7 +31,7 @@ class Login extends Component {
             password: this.state.password,
         }
 
-        fetch('http://localhost:8088/authe/signin', {
+        fetch('https://my-java-backend.herokuapp.com/authe/signin', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
@@ -39,6 +39,7 @@ class Login extends Component {
             },
             body: JSON.stringify(user)
         })
+        
             .then((res) => res.json())
             .then((data) => {
                 console.log(data)

@@ -29,7 +29,7 @@ class Consultation extends Component {
             user_id: parseInt(this.state.myToken.id)
         }
         console.log(user)
-        fetch('http://localhost:8088/authe/complain',{
+        fetch('https://my-java-backend.herokuapp.com/authe/complain/' + parseInt(this.state.myToken.id),{
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',

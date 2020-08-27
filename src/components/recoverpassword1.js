@@ -18,7 +18,7 @@ class RecoverPasswordOne extends Component {
         const user ={
             email: this.state.email
         }
-        fetch('http://localhost:8088/authe/setPassword', {
+        fetch('https://my-java-backend.herokuapp.com/authe/setPassword', {
             method:'POST',
             headers:{
                 'Acccept': 'application/json, text/plain, */*',
