@@ -20,6 +20,7 @@ class Header extends Component {
                             <li> <Link to="/consult">Consult A Consultant</Link></li>
                             <li><a href="#">Buy From Us</a></li>
                             <li><Link to="/profile">Profile</Link> </li>
+                            <span></span>
                             <li onClick={this.tokenRemoval}> <Link to="/login">Log Out</Link> </li>
                         </ul>
                     </div>
