@@ -6,7 +6,6 @@ import Consultation from './components/consultation'
 import Register from './components/register'
 import Login from './components/login'
 import RecoverPasswordOne from './components/recoverpassword1'
-import RecoverPasswordTwo from './components/recoverpassword2'
 import Profile from './components/profile'
 class App extends Component {
   
