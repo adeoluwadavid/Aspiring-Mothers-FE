@@ -39,6 +39,7 @@ class Consultation extends Component {
         })
         .then(res => res.json())
         .then(data =>console.log(data))
+        .catch(err => console.log(err))
 
         this.setState({
             message: 'Your complain has been Received',

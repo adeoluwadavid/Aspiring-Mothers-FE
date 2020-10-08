@@ -47,14 +47,21 @@ class Login extends Component {
                     localStorage.setItem('token', JSON.stringify(data))
                     history.push("/dashboard")
                 } 
-               else if(data.message){
+               else if(data.error){
                     this.setState({
-                        message: data.message
+                        message: data.error
                     })
                 }
             }
         )
+        .catch(err => console.log(err))
 
+        this.setState({
+            
+            email: '',
+            password: '',
+            
+         })
     }
     render() {
       //  const {history} = this.props

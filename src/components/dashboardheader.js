@@ -13,7 +13,7 @@ class Header extends Component {
             <div>
             
                 <nav>
-                    <div class="nav-wrapper">
+                    <div className="nav-wrapper">
                         <a href="/dashboard">  <img className="brand-logo logo" src={logo2} alt="Logo" /> </a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul class="right hide-on-med-and-down">

@@ -30,7 +30,7 @@ class Profile extends Component {
             .then((res) => res.json())
             .then(data => console.log(data))
         this.setState({
-            message: 'Image Uploaded, Please Refresh'
+            message: 'Image Uploaded, Please Refresh in 30s'
         })
     }
 

@@ -73,6 +73,14 @@ class Register extends Component {
                 }
             }
          )
+         this.setState({
+            firstName: '',
+            lastName: '',
+            email: '',
+            password: '',
+            address: '',
+            message: ''
+         })
     }
     render() {
         return (
