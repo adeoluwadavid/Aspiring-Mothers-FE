@@ -11,7 +11,7 @@ class RecoverPasswordOne extends Component {
         this.setState({
             email : e.target.value
         })
-        console.log(e.target.value);
+      //  console.log(e.target.value);
     }
     handleSubmit=(e)=>{
         e.preventDefault();
@@ -27,7 +27,7 @@ class RecoverPasswordOne extends Component {
             body: JSON.stringify(user)
         })
         .then(res => res.text())
-        .then(data =>console.log(data))
+        .then(data =>data)
 
         this.setState({
             email: '',

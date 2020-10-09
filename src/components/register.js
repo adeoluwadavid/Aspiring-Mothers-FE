@@ -17,31 +17,31 @@ class Register extends Component {
         this.setState({
             firstName: e.target.value
         })
-        console.log(e.target.value)
+        
     }
     change2 = (e) => {
         this.setState({
             lastName: e.target.value
         })
-        console.log(e.target.value)
+        
     }
     change3 = (e) => {
         this.setState({
             email: e.target.value
         })
-        console.log(e.target.value)
+        
     }
     change4 = (e) => {
         this.setState({
             password: e.target.value
         })
-        console.log(e.target.value)
+       
     }
     change5 = (e) => {
         this.setState({
             address: e.target.value
         })
-        console.log(e.target.value)
+        
     }
 
     handleSubmit = (e) => {
@@ -65,7 +65,7 @@ class Register extends Component {
         })
             .then((res) => res.json())
             .then((data) => {
-                console.log(data)
+                
                 if (data.message) {
                     this.setState({
                         message: data.message

@@ -13,13 +13,13 @@ class Consultation extends Component {
         this.setState({
             complain: e.target.value
         })
-        console.log(e.target.value)
+        
     }
     change2 = (e) => {
         this.setState({
             date: e.target.value
         })
-        console.log(e.target.value)
+        
     }
     handleSubmit = (e) => {
         e.preventDefault();

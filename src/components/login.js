@@ -14,17 +14,17 @@ class Login extends Component {
         this.setState({
             email: e.target.value
         })
-        console.log(e.target.value)
+       
     }
     change2 = (e) => {
         this.setState({
             password: e.target.value
         })
-        console.log(e.target.value)
+        
     }
     handleSubmit = (e) => {
         e.preventDefault()
-        console.log(this.state)
+        
         const {history} = this.props
         const user = {
             email: this.state.email,
@@ -42,7 +42,7 @@ class Login extends Component {
         
             .then((res) => res.json())
             .then((data) => {
-                console.log(data)
+                
                 if (data.accessToken && history) {
                     localStorage.setItem('token', JSON.stringify(data))
                     history.push("/dashboard")

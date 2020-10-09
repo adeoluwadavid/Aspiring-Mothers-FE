@@ -13,7 +13,7 @@ class Profile extends Component {
         passwordMessage:''
     }
     fileHandler = (e) => {
-        console.log(e.target.files[0])
+       // console.log(e.target.files[0])
         this.setState({
             selectedFile: e.target.files[0]
         })
@@ -28,7 +28,7 @@ class Profile extends Component {
             body: data
         })
             .then((res) => res.json())
-            .then(data => console.log(data))
+            .then(data => data)
         this.setState({
             message: 'Image Uploaded, Please Refresh in 30s'
         })
@@ -45,7 +45,7 @@ class Profile extends Component {
         this.setState({
             newPassword: e.target.value
         })
-        console.log(e.target.value)
+      //  console.log(e.target.value)
     }
 
     updatePassword=(e)=>{
@@ -64,7 +64,7 @@ class Profile extends Component {
             body: JSON.stringify(user) 
         })
         .then(res => res.text())
-        .then(data => console.log(data))
+        .then(data => data)
 
         this.setState({
         //    currentPassword: '',
