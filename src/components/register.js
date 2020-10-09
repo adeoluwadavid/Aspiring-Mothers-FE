@@ -17,31 +17,31 @@ class Register extends Component {
         this.setState({
             firstName: e.target.value
         })
-        
+
     }
     change2 = (e) => {
         this.setState({
             lastName: e.target.value
         })
-        
+
     }
     change3 = (e) => {
         this.setState({
             email: e.target.value
         })
-        
+
     }
     change4 = (e) => {
         this.setState({
             password: e.target.value
         })
-       
+
     }
     change5 = (e) => {
         this.setState({
             address: e.target.value
         })
-        
+
     }
 
     handleSubmit = (e) => {
@@ -65,22 +65,28 @@ class Register extends Component {
         })
             .then((res) => res.json())
             .then((data) => {
-                
+
                 if (data.message) {
                     this.setState({
-                        message: data.message
+                        message: data.message,
+                        firstName: '',
+                        lastName: '',
+                        email: '',
+                        password: '',
+                        address: '',
+                        message: ''
                     })
                 }
             }
-         )
-         this.setState({
-            firstName: '',
-            lastName: '',
-            email: '',
-            password: '',
-            address: '',
-            message: ''
-         })
+            )
+        // this.setState({
+        //     firstName: '',
+        //     lastName: '',
+        //     email: '',
+        //     password: '',
+        //     address: '',
+        //     message: ''
+        // })
     }
     render() {
         return (
@@ -122,7 +128,7 @@ class Register extends Component {
                                 </div>
                             </div>
                             <div className="center orange-text">{this.state.message}</div>
-                            
+
                             <div>
                                 <button className="btn button waves-effect waves-light">Register</button><br />
                             </div>

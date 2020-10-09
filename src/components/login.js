@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link , withRouter } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import logo from '../img/logo.png'
 import Footer from './footer'
 
@@ -14,18 +14,18 @@ class Login extends Component {
         this.setState({
             email: e.target.value
         })
-       
+
     }
     change2 = (e) => {
         this.setState({
             password: e.target.value
         })
-        
+
     }
     handleSubmit = (e) => {
         e.preventDefault()
-        
-        const {history} = this.props
+
+        const { history } = this.props
         const user = {
             email: this.state.email,
             password: this.state.password,
@@ -39,32 +39,34 @@ class Login extends Component {
             },
             body: JSON.stringify(user)
         })
-        
+
             .then((res) => res.json())
             .then((data) => {
-                
+
                 if (data.accessToken && history) {
                     localStorage.setItem('token', JSON.stringify(data))
                     history.push("/dashboard")
-                } 
-               else if(data.error){
+                }
+                else if (data.error) {
                     this.setState({
-                        message: data.error
+                        message: data.error,
+                        email: '',
+                        password: '',
                     })
                 }
             }
-        )
-        .catch(err => console.log(err))
+            )
+            .catch(err => console.log(err))
 
-        this.setState({
-            
-            email: '',
-            password: '',
-            
-         })
+        // this.setState({
+
+        //     email: '',
+        //     password: '',
+
+        // })
     }
     render() {
-      //  const {history} = this.props
+        //  const {history} = this.props
         return (
             <div className="container">
                 <a href="/">
@@ -77,16 +79,16 @@ class Login extends Component {
                         <div className="row">
                             <div className="input-field">
                                 <i className="material-icons prefix">email</i>
-                                <input id="icon_prefix" value={this.state.email} type="email" onChange={this.change1} required/>
+                                <input id="icon_prefix" value={this.state.email} type="email" onChange={this.change1} required />
                                 <label htmlFor="icon_prefix">Email</label>
                             </div>
                             <div className="input-field">
                                 <i className="material-icons prefix">lock</i>
-                                <input id="icon_prefix" value={this.state.password} type="password" onChange={this.change2} required/>
+                                <input id="icon_prefix" value={this.state.password} type="password" onChange={this.change2} required />
                                 <label htmlFor="password">Password</label>
                             </div>
                         </div>
-                            <div className="center red-text">{this.state.message}</div>
+                        <div className="center red-text">{this.state.message}</div>
                         <div>
                             <button type="submit" className="btn button waves-effect waves-light">Login</button><br />
                         </div>

@@ -38,7 +38,7 @@ class Consultation extends Component {
             body: JSON.stringify(user)
         })
         .then(res => res.json())
-        .then(data =>console.log(data))
+        .then(data =>data)
         .catch(err => console.log(err))
 
         this.setState({
