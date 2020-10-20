@@ -113,7 +113,7 @@ code {
   margin-top: 20px;
 }
 .r1{
-  border: 3px solid black;
+
   margin-left: 25%;
   margin-right: 25%;
 }
@@ -128,7 +128,7 @@ code {
   margin-left: 25%;
 }
 .rcc{
-  border: 3px solid black;
+  
   display: flex;
   justify-content: space-around;
   margin-right: 25%;
