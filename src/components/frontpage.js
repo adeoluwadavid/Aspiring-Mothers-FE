@@ -8,7 +8,8 @@ import preg4 from '../img/preg4.jpg'
 class FrontPage extends Component {
     render() {
         return (
-            <div className="container">
+            <div class='relative'>
+            <div className="container fborder">
                 <a href="/"> 
                 <div>
                   <img className="" src={logo} id="logo" alt="Logo" /> 
@@ -58,9 +59,13 @@ class FrontPage extends Component {
                     <i className="material-icons right">send</i>
                         </button>
                     </Link>
-                </div>
-                <Footer />
+                </div> 
+                
             </div>
+            <div>
+            <Footer />
+            </div>
+        </div>
         )
     }
 }

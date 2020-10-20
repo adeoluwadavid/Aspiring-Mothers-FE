@@ -79,28 +79,20 @@ class Register extends Component {
                 }
             }
             )
-        // this.setState({
-        //     firstName: '',
-        //     lastName: '',
-        //     email: '',
-        //     password: '',
-        //     address: '',
-        //     message: ''
-        // })
+       
     }
     render() {
         return (
-            <div className="container">
+            <div className="register">
+            <div className="container r">
                 <div>
                     <a href="/">
                         <div>
                             <img className="" src={logo} id="logo" alt="Logo" />
                         </div>
                     </a>
-                    <div className="row">
-                        <form className="col s12" onSubmit={this.handleSubmit}>
-                            <div className="row">
-                                <div className="input-field col s6">
+                        <form className="col s12 r1" onSubmit={this.handleSubmit}>
+                                <div className=" input-field col s6">
                                     <input id="firstName" type="text" value={this.state.firstName} className="validate" onChange={this.change1} required />
                                     <label htmlFor="first_name">First Name</label>
                                 </div>
@@ -108,42 +100,37 @@ class Register extends Component {
                                     <input id="lastName" type="text" value={this.state.lastName} className="validate" onChange={this.change2} required />
                                     <label htmlFor="last_name">Last Name</label>
                                 </div>
-                            </div>
-                            <div className="row">
-                                <div className="input-field col s12">
+                                <div className=" rinput1 input-field col s12">
                                     <input id="email" type="email" value={this.state.email} className="validate" onChange={this.change3} required />
                                     <label htmlFor="email">Email</label>
                                 </div>
-                            </div>
-                            <div className="row">
                                 <div className="input-field col s12">
                                     <input id="password" type="password" value={this.state.password} className="validate" onChange={this.change4} required />
                                     <label htmlFor="password">Password</label>
                                 </div>
-                            </div>
-                            <div className="row">
+                            
                                 <div className="input-field col s12">
                                     <input id="address" type="text" value={this.state.address} className="validate" onChange={this.change5} required />
                                     <label htmlFor="Address">Address</label>
                                 </div>
-                            </div>
+                           
                             <div className="center orange-text">{this.state.message}</div>
 
                             <div>
-                                <button className="btn button waves-effect waves-light">Register</button><br />
+                                <button className="btn button waves-effect waves-light rpbutton2">Register</button><br />
                             </div>
                         </form>
-                        <div className="row">
+                        <div className="rcc">
                             <Link to="/login">
-                                <button className="btn button waves-effect waves-light col s6">Login</button>
+                                <button className="btn button waves-effect waves-light col s6 rpbutton2">Login</button>
                             </Link>
                             <Link to="/recoverpasswordone">
-                                <button className="btn button waves-effect waves-light col s6">Forgot Password?</button>
+                                <button className="btn button waves-effect waves-light col s6 rpbutton2">Password?</button>
                             </Link>
                         </div>
-                    </div>
                 </div>
-                <Footer />
+            </div>
+            <Footer />
             </div>
         )
     }

@@ -37,34 +37,33 @@ class RecoverPasswordOne extends Component {
     render() {
         
         return (
-            <div className="container">
+            <div className="rp">
+            <div className="container rp1">
                 <a href="/"> 
                 <div>
                   <img className="" src={logo} id="logo" alt="Logo" /> 
                 </div>
                 </a>
-                <form  className="col s12" onSubmit={this.handleSubmit}>
-                <div className="row">
-                    <div className="input-field center">
+                <form  className="col s12 rform" onSubmit={this.handleSubmit}>
+                    <div className="input-field center formwidth">
                         <input id="first_name2" type="email" className="validate" value={this.state.email} onChange={this.handleChange} required/>
                         <label className="active" htmlFor="recoverPassword">Your Email</label>
                     </div>
                     <div className="center red-text">{this.state.message}</div>
                     <button className="btn button waves-effect waves-light">Recover Password</button><br />
-                </div>
+                
                 </form>
-                <div>
-                    <div className="row">
+               
+                    <div className="rpdisplay">
                         <Link to="/login">
-                            <button className="btn button waves-effect waves-light col s6">Login</button>
+                            <button className="btn button waves-effect waves-light col s6 rpbutton">Login</button>
                         </Link>
                         <Link to="/register">
-                            <button className="btn button waves-effect waves-light col s6">Register</button>
+                            <button className="btn button waves-effect waves-light col s6 rpbutton">Register</button>
                         </Link>
                     </div>
-                </div>
-                
-                <Footer />
+            </div>
+            <Footer />
             </div>
         )
     }

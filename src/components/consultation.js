@@ -51,11 +51,10 @@ class Consultation extends Component {
     }
     render() {
         return (
-            <div className="container">
+            <div className="container c1">
                 <Header />
-                <div>
-                    <div className="row">
-                        <form className="col s12" onSubmit={this.handleSubmit}>
+                <div className="c2">
+                        <form className="c3 col s12" onSubmit={this.handleSubmit}>
                             <div className="row">
                                 <div className="input-field col s12">
                                     <textarea id="textarea1" className="materialize-textarea" value={this.state.complain} onChange={this.change1} required></textarea>
@@ -72,9 +71,6 @@ class Consultation extends Component {
                                 </button>
                             </div>
                         </form>
-                    </div>
-
-
                 </div>
                 <Footer />
             </div>

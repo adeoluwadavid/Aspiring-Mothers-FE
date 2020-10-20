@@ -57,18 +57,12 @@ class Login extends Component {
             }
             )
             .catch(err => console.log(err))
-
-        // this.setState({
-
-        //     email: '',
-        //     password: '',
-
-        // })
     }
     render() {
         //  const {history} = this.props
         return (
-            <div className="container">
+            <div className="l">
+            <div className="container l1">
                 <a href="/">
                     <div>
                         <img className="" src={logo} id="logo" alt="Logo" />
@@ -77,12 +71,12 @@ class Login extends Component {
                 <div className="row">
                     <form className="col s12" onSubmit={this.handleSubmit}>
                         <div className="row">
-                            <div className="input-field">
+                            <div className="input-field input1">
                                 <i className="material-icons prefix">email</i>
-                                <input id="icon_prefix" value={this.state.email} type="email" onChange={this.change1} required />
+                                <input  id="icon_prefix" value={this.state.email} type="email" onChange={this.change1} required />
                                 <label htmlFor="icon_prefix">Email</label>
                             </div>
-                            <div className="input-field">
+                            <div className="input-field input1">
                                 <i className="material-icons prefix">lock</i>
                                 <input id="icon_prefix" value={this.state.password} type="password" onChange={this.change2} required />
                                 <label htmlFor="password">Password</label>
@@ -90,19 +84,20 @@ class Login extends Component {
                         </div>
                         <div className="center red-text">{this.state.message}</div>
                         <div>
-                            <button type="submit" className="btn button waves-effect waves-light">Login</button><br />
+                            <button type="submit" className="btn button waves-effect waves-light rpbutton2">Login</button><br />
                         </div>
                     </form>
-                    <div className="row">
-                        <Link to="/register">
-                            <button className="btn button waves-effect waves-light col s6">Register</button>
+                </div>  
+                <div className="button1">
+                    <Link to="/register">
+                            <button className="btn button waves-effect waves-light col s6 rpbutton">Register</button>
                         </Link>
-                        <Link to="/recoverpasswordone">
-                            <button className="btn button waves-effect waves-light col s6">Forgot Password?</button>
-                        </Link>
-                    </div>
-                </div>
-                <Footer />
+                    <Link to="/recoverpasswordone">
+                            <button className="btn button waves-effect waves-light col s6 rpbutton">Password?</button>
+                    </Link>
+                </div> 
+            </div>
+            <Footer />
             </div>
         )
     }
