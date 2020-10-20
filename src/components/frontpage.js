@@ -8,7 +8,7 @@ import preg4 from '../img/preg4.jpg'
 class FrontPage extends Component {
     render() {
         return (
-            <div class='relative'>
+            <div className='relative'>
             <div className="container fborder">
                 <a href="/"> 
                 <div>

@@ -22,6 +22,16 @@ class Login extends Component {
         })
 
     }
+
+   button1 =()=>{
+       var a = document.getElementById('disableB')
+        a.disabled = true
+    }
+    button2 =()=>{
+        var a = document.getElementById('disableB')
+        a.disabled = false
+    }
+
     handleSubmit = (e) => {
         e.preventDefault()
 
@@ -30,7 +40,9 @@ class Login extends Component {
             email: this.state.email,
             password: this.state.password,
         }
-
+        this.setState({
+            message: ''
+        })
         fetch('https://my-java-backend.herokuapp.com/authe/signin', {
             method: 'POST',
             headers: {
@@ -53,10 +65,13 @@ class Login extends Component {
                         email: '',
                         password: '',
                     })
+                    this.button2()
                 }
             }
             )
             .catch(err => console.log(err))
+
+            this.button1()
     }
     render() {
         //  const {history} = this.props
@@ -84,7 +99,7 @@ class Login extends Component {
                         </div>
                         <div className="center red-text">{this.state.message}</div>
                         <div>
-                            <button type="submit" className="btn button waves-effect waves-light rpbutton2">Login</button><br />
+                            <button id="disableB" type="submit" className="btn button waves-effect waves-light rpbutton2">Login</button><br />
                         </div>
                     </form>
                 </div>  
