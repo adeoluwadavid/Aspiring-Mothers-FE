@@ -41,8 +41,8 @@ code {
 
 
 .input1{
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .register{
   height: 100vh;
@@ -67,8 +67,8 @@ code {
 
 
 .formwidth{
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .rpdisplay{
   display: flex;
@@ -114,8 +114,8 @@ code {
 }
 .r1{
 
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .c1{
   height: 100vh;
@@ -124,8 +124,8 @@ code {
   height: 75%;
 }
 .c3{
-  margin-right: 25%;
-  margin-left: 25%;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 .rcc{
   
