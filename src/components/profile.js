@@ -88,10 +88,10 @@ class Profile extends Component {
         const myImage = this.state.image;
        // console.log(myImage)
         return (
-            <div className="container">
+            
+            <div className="container p1">
                 <Header />
-               
-                <div className="row">
+                <div className="row p2">
                     <div className="col l6">
                         <br />
                         <div className="center">
@@ -127,9 +127,10 @@ class Profile extends Component {
                         </form>
                     </div>
                 </div>
-                
-                <Footer />
+                 <Footer />
             </div>
+           
+            
         )
     }
 }
